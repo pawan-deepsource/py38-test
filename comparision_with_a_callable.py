@@ -2,6 +2,7 @@ import functools
 
 
 class C:
+
     @functools.cached_property
     def addr(self):
         return "asdf"
@@ -9,7 +10,7 @@ class C:
     @property
     def another(self):
         return "ddpjd"
-    
+
     def not_a_property(self):
         return "dnvpmPkmv"
 
