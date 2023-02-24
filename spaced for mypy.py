@@ -1,9 +1,11 @@
 import gettext
 import locale
 
-
 lang = locale.getdefaultlocale()[0]
-trans = gettext.translation("qmm", localedir=None, languages=[lang], fallback=True)
+trans = gettext.translation("qmm",
+                            localedir=None,
+                            languages=[lang],
+                            fallback=True)
 trans.install()
 
 print(_("hurray!"))
@@ -13,5 +15,6 @@ print('_' in builtinss)
 
 print(__("hurray!"))
 
+
 def foo() -> None:
-  return 5
+    return 5
